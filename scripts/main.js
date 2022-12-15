@@ -17,6 +17,11 @@ function criaCalculadora() {
             this.clickBotoes();
 
         },
+        quad(){
+            let raiz = Number(this.display.innerText);
+            let qtr = raiz*raiz;
+            this.display.innerHTML = qtr
+        },
 
         raizQuadrada() {
 
@@ -61,6 +66,10 @@ function criaCalculadora() {
         clickBotoes() {
             document.addEventListener('click', e => {
                 const el = e.target;
+
+                if (el.classList.contains('quad')) {
+                    this.quad();
+                }
 
                 if (el.classList.contains('troca')) {
                     this.troca();
