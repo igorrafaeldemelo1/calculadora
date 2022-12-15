@@ -22,11 +22,14 @@ html, body, main {
     color: #fff;
     
 }
+.app{
+    background: url(../assets/background.jpg) no-repeat center center;
+    background-size: cover;
+}
 
 main {
     font-size: clamp(14px, 1.6rem, 2vw);  
-    background: url(../assets/background.jpg) no-repeat center center;
-    background-size: cover;
+    padding-top: 100px;
     display: grid;
     place-items: center;
     position: relative;
